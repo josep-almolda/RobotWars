@@ -18,7 +18,7 @@ namespace RobotWars.Utils
             throw new NotImplementedException();
         }
 
-        public List<ICommand> ParseCommamnds(string input)
+        public List<ICommand> ParseCommands(string input)
         {
             throw new NotImplementedException();
         }

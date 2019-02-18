@@ -15,7 +15,7 @@ namespace RobotWars
                 currentLine = Console.ReadLine();
             }
             Console.WriteLine(input);
-            var robotWars = new RobotWars(new Parser());
+            var robotWars = new RobotWarsProcessor(new Parser());
             var result = robotWars.Process(input);
             Console.WriteLine(result);
             Console.ReadKey();

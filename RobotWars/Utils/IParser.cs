@@ -10,7 +10,7 @@ namespace RobotWars.Utils
     {
         Dimensions ParseDimensions(string input);
         Position ParsePosition(string input);
-        List<ICommand> ParseCommamnds(string input);
+        List<ICommand> ParseCommands(string input);
         string FormatPositions(List<Position> reportRobotsPositions);
     }
 }

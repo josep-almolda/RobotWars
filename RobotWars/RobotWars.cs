@@ -27,7 +27,7 @@ namespace RobotWars
                 for (var index = 1; index < lines.Length; index += 2)
                 {
                     var robot = new Robot(_parser.ParsePosition(lines[index]));
-                    _parser.ParseCommamnds(lines[index + 1]).ForEach(command =>
+                    _parser.ParseCommands(lines[index + 1]).ForEach(command =>
                     {
                         robot.AddCommand(command);
                     });
