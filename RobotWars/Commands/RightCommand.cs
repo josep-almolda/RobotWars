@@ -7,9 +7,29 @@ namespace RobotWars.Commands
 {
     public class RightCommand : ICommand
     {
-        public Position Execute(List<Robot> robots, Dimensions dimensions)
+        public Position Execute(Position position, List<Robot> robots, Dimensions dimensions)
         {
-            throw new NotImplementedException();
+            Position result;
+            switch (position.Heading)
+            {
+                case Heading.E:
+                    result = new Position(position.X, position.Y, Heading.S);
+                    break;
+                case Heading.S:
+                    result = new Position(position.X, position.Y, Heading.W);
+                    break;
+                case Heading.W:
+                    result = new Position(position.X, position.Y, Heading.N);
+                    break;
+                case Heading.N:
+                    result = new Position(position.X, position.Y, Heading.E);
+                    break;
+                default:
+                    result = null;
+                    break;
+            }
+
+            return result;
         }
     }
 }

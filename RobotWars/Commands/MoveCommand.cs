@@ -7,7 +7,7 @@ namespace RobotWars.Commands
 {
     public class MoveCommand : ICommand
     {
-        public Position Execute(List<Robot> robots, Dimensions dimensions)
+        public Position Execute(Position position, List<Robot> robots, Dimensions dimensions)
         {
             throw new NotImplementedException();
         }

@@ -7,6 +7,6 @@ namespace RobotWars.Commands
 {
     public interface ICommand
     {
-        Position Execute(List<Robot> robots, Dimensions dimensions);
+        Position Execute(Position position, List<Robot> robots, Dimensions dimensions);
     }
 }

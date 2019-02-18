@@ -25,7 +25,7 @@ namespace RobotWars
         {
             foreach (var command in Commands)
             {
-                Position = command.Execute(robots, dimensions);
+                Position = command.Execute(Position, robots, dimensions);
             }
         }
 
