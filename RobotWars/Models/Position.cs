@@ -14,7 +14,7 @@ namespace RobotWars.Models
         {
             X = x;
             Y = y;
-            Heading = Heading;
+            Heading = heading;
         }
     }
 }
