@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using RobotWars.Utils;
 
 namespace RobotWars
@@ -7,16 +8,15 @@ namespace RobotWars
     {
         static void Main(string[] args)
         {
-            var input = string.Empty;
+            var input = new List<string>();
             var currentLine = Console.ReadLine();
-            while (currentLine != "S")
+            while (currentLine != "F")
             {
-                input += $"{currentLine}\n";
+                input.Add(currentLine);
                 currentLine = Console.ReadLine();
             }
-            Console.WriteLine(input);
             var robotWars = new RobotWarsProcessor(new Parser());
-            var result = robotWars.Process(input);
+            var result = robotWars.Process(string.Join('\n', input));
             Console.WriteLine(result);
             Console.ReadKey();
         }        
